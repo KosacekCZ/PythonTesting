@@ -3,15 +3,19 @@ from main import Kalkulacka
 
 
 class TestKalkulacka(TestCase):
+
     def test_secti(self):
-        kal = Kalkulacka()
-        self.assertEqual()
+        k = Kalkulacka()
+        self.assertEqual(10, k.secti(4, 6), "scitani")
 
     def test_odecti(self):
-        self.fail()
+        k = Kalkulacka()
+        self.assertEqual(2, k.odecti(6, 4))
 
     def test_vynasob(self):
-        self.fail()
+        k = Kalkulacka()
+        self.assertEqual(50, k.vynasob(10, 5))
 
     def test_vydel(self):
-        self.fail()
+        k = Kalkulacka()
+        self.assertEqual(0, k.vydel(0, 10))

@@ -66,30 +66,43 @@ main    </h1>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a>    <span class="k">def</span> <span class="nf">secti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">        Metoda sečti se využívá ke sčítání dvou celých čísel.</span>
-</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="sd">        :param a: celé číslo, první člen ke sčítání</span>
-</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">        :param b: celé číslo, druhý člen ke sčítání</span>
-</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="sd">        :return: návratová hodnota reprezentuje součet parametrů a a b</span>
+</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">        Funkce pro sčítání dvou čísel.</span>
+</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="sd">        :param a: celé číslo, první člen sčítání</span>
+</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">        :param b: celé číslo, druhý člen sčítání</span>
+</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="sd">        :return: vrací součet čísel a a b</span>
 </span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>
-</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
-</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a>
-</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="L-19"><a href="#L-19"><span class="linenos">19</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="L-20"><a href="#L-20"><span class="linenos">20</span></a><span class="sd">        Metoda pro dělení celých čísel.</span>
-</span><span id="L-21"><a href="#L-21"><span class="linenos">21</span></a><span class="sd">        :param a: celé číslo, dělenec</span>
-</span><span id="L-22"><a href="#L-22"><span class="linenos">22</span></a><span class="sd">        :param b: celé číslo, dělitel, nesmí být nulový</span>
-</span><span id="L-23"><a href="#L-23"><span class="linenos">23</span></a><span class="sd">        :return: podíl čísel a a b</span>
-</span><span id="L-24"><a href="#L-24"><span class="linenos">24</span></a><span class="sd">        :raises: Pokud je parametr B 0, tak vyhazuje výjmu proti dělení nulou.</span>
-</span><span id="L-25"><a href="#L-25"><span class="linenos">25</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="L-26"><a href="#L-26"><span class="linenos">26</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="L-27"><a href="#L-27"><span class="linenos">27</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
-</span><span id="L-28"><a href="#L-28"><span class="linenos">28</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>
+</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>
+</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a><span class="sd">        Funkce pro odčítání dvou čísel.</span>
+</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a><span class="sd">        :param a: celé číslo, první člen odčítání</span>
+</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a><span class="sd">        :param b: celé číslo, druhý člen odčítání</span>
+</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a><span class="sd">        :return: vrací rozdíl čísel a a b</span>
+</span><span id="L-19"><a href="#L-19"><span class="linenos">19</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-20"><a href="#L-20"><span class="linenos">20</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="L-21"><a href="#L-21"><span class="linenos">21</span></a>
+</span><span id="L-22"><a href="#L-22"><span class="linenos">22</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="L-23"><a href="#L-23"><span class="linenos">23</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-24"><a href="#L-24"><span class="linenos">24</span></a><span class="sd">        Funkce pro násobení dvou čísel.</span>
+</span><span id="L-25"><a href="#L-25"><span class="linenos">25</span></a><span class="sd">        :param a: celé číslo, první člen násobení</span>
+</span><span id="L-26"><a href="#L-26"><span class="linenos">26</span></a><span class="sd">        :param b: celé číslo, druhý člen násobení</span>
+</span><span id="L-27"><a href="#L-27"><span class="linenos">27</span></a><span class="sd">        :return: vrací součin čísel a a b</span>
+</span><span id="L-28"><a href="#L-28"><span class="linenos">28</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-29"><a href="#L-29"><span class="linenos">29</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="L-30"><a href="#L-30"><span class="linenos">30</span></a>
+</span><span id="L-31"><a href="#L-31"><span class="linenos">31</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="L-32"><a href="#L-32"><span class="linenos">32</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-33"><a href="#L-33"><span class="linenos">33</span></a><span class="sd">        Metoda určená k dělení dvou čísel.</span>
+</span><span id="L-34"><a href="#L-34"><span class="linenos">34</span></a><span class="sd">        :param a: číslo, dělenec</span>
+</span><span id="L-35"><a href="#L-35"><span class="linenos">35</span></a><span class="sd">        :param b: číslo, dělitel</span>
+</span><span id="L-36"><a href="#L-36"><span class="linenos">36</span></a><span class="sd">        :return: podíl čísel a,b.</span>
+</span><span id="L-37"><a href="#L-37"><span class="linenos">37</span></a><span class="sd">        :raises vyhazuje výjímku v případě, že dělitel je nula.</span>
+</span><span id="L-38"><a href="#L-38"><span class="linenos">38</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-39"><a href="#L-39"><span class="linenos">39</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="L-40"><a href="#L-40"><span class="linenos">40</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
+</span><span id="L-41"><a href="#L-41"><span class="linenos">41</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 </span></pre></div>
 
 
@@ -109,30 +122,43 @@ main    </h1>
 </span><span id="Kalkulacka-3"><a href="#Kalkulacka-3"><span class="linenos"> 3</span></a>
 </span><span id="Kalkulacka-4"><a href="#Kalkulacka-4"><span class="linenos"> 4</span></a>    <span class="k">def</span> <span class="nf">secti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 </span><span id="Kalkulacka-5"><a href="#Kalkulacka-5"><span class="linenos"> 5</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Kalkulacka-6"><a href="#Kalkulacka-6"><span class="linenos"> 6</span></a><span class="sd">        Metoda sečti se využívá ke sčítání dvou celých čísel.</span>
-</span><span id="Kalkulacka-7"><a href="#Kalkulacka-7"><span class="linenos"> 7</span></a><span class="sd">        :param a: celé číslo, první člen ke sčítání</span>
-</span><span id="Kalkulacka-8"><a href="#Kalkulacka-8"><span class="linenos"> 8</span></a><span class="sd">        :param b: celé číslo, druhý člen ke sčítání</span>
-</span><span id="Kalkulacka-9"><a href="#Kalkulacka-9"><span class="linenos"> 9</span></a><span class="sd">        :return: návratová hodnota reprezentuje součet parametrů a a b</span>
+</span><span id="Kalkulacka-6"><a href="#Kalkulacka-6"><span class="linenos"> 6</span></a><span class="sd">        Funkce pro sčítání dvou čísel.</span>
+</span><span id="Kalkulacka-7"><a href="#Kalkulacka-7"><span class="linenos"> 7</span></a><span class="sd">        :param a: celé číslo, první člen sčítání</span>
+</span><span id="Kalkulacka-8"><a href="#Kalkulacka-8"><span class="linenos"> 8</span></a><span class="sd">        :param b: celé číslo, druhý člen sčítání</span>
+</span><span id="Kalkulacka-9"><a href="#Kalkulacka-9"><span class="linenos"> 9</span></a><span class="sd">        :return: vrací součet čísel a a b</span>
 </span><span id="Kalkulacka-10"><a href="#Kalkulacka-10"><span class="linenos">10</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Kalkulacka-11"><a href="#Kalkulacka-11"><span class="linenos">11</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-</span><span id="Kalkulacka-12"><a href="#Kalkulacka-12"><span class="linenos">12</span></a>
-</span><span id="Kalkulacka-13"><a href="#Kalkulacka-13"><span class="linenos">13</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka-14"><a href="#Kalkulacka-14"><span class="linenos">14</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-</span><span id="Kalkulacka-15"><a href="#Kalkulacka-15"><span class="linenos">15</span></a>
-</span><span id="Kalkulacka-16"><a href="#Kalkulacka-16"><span class="linenos">16</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka-17"><a href="#Kalkulacka-17"><span class="linenos">17</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
-</span><span id="Kalkulacka-18"><a href="#Kalkulacka-18"><span class="linenos">18</span></a>
-</span><span id="Kalkulacka-19"><a href="#Kalkulacka-19"><span class="linenos">19</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka-20"><a href="#Kalkulacka-20"><span class="linenos">20</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Kalkulacka-21"><a href="#Kalkulacka-21"><span class="linenos">21</span></a><span class="sd">        Metoda pro dělení celých čísel.</span>
-</span><span id="Kalkulacka-22"><a href="#Kalkulacka-22"><span class="linenos">22</span></a><span class="sd">        :param a: celé číslo, dělenec</span>
-</span><span id="Kalkulacka-23"><a href="#Kalkulacka-23"><span class="linenos">23</span></a><span class="sd">        :param b: celé číslo, dělitel, nesmí být nulový</span>
-</span><span id="Kalkulacka-24"><a href="#Kalkulacka-24"><span class="linenos">24</span></a><span class="sd">        :return: podíl čísel a a b</span>
-</span><span id="Kalkulacka-25"><a href="#Kalkulacka-25"><span class="linenos">25</span></a><span class="sd">        :raises: Pokud je parametr B 0, tak vyhazuje výjmu proti dělení nulou.</span>
-</span><span id="Kalkulacka-26"><a href="#Kalkulacka-26"><span class="linenos">26</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Kalkulacka-27"><a href="#Kalkulacka-27"><span class="linenos">27</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="Kalkulacka-28"><a href="#Kalkulacka-28"><span class="linenos">28</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
-</span><span id="Kalkulacka-29"><a href="#Kalkulacka-29"><span class="linenos">29</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span><span id="Kalkulacka-11"><a href="#Kalkulacka-11"><span class="linenos">11</span></a>
+</span><span id="Kalkulacka-12"><a href="#Kalkulacka-12"><span class="linenos">12</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="Kalkulacka-13"><a href="#Kalkulacka-13"><span class="linenos">13</span></a>
+</span><span id="Kalkulacka-14"><a href="#Kalkulacka-14"><span class="linenos">14</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka-15"><a href="#Kalkulacka-15"><span class="linenos">15</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-16"><a href="#Kalkulacka-16"><span class="linenos">16</span></a><span class="sd">        Funkce pro odčítání dvou čísel.</span>
+</span><span id="Kalkulacka-17"><a href="#Kalkulacka-17"><span class="linenos">17</span></a><span class="sd">        :param a: celé číslo, první člen odčítání</span>
+</span><span id="Kalkulacka-18"><a href="#Kalkulacka-18"><span class="linenos">18</span></a><span class="sd">        :param b: celé číslo, druhý člen odčítání</span>
+</span><span id="Kalkulacka-19"><a href="#Kalkulacka-19"><span class="linenos">19</span></a><span class="sd">        :return: vrací rozdíl čísel a a b</span>
+</span><span id="Kalkulacka-20"><a href="#Kalkulacka-20"><span class="linenos">20</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-21"><a href="#Kalkulacka-21"><span class="linenos">21</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="Kalkulacka-22"><a href="#Kalkulacka-22"><span class="linenos">22</span></a>
+</span><span id="Kalkulacka-23"><a href="#Kalkulacka-23"><span class="linenos">23</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka-24"><a href="#Kalkulacka-24"><span class="linenos">24</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-25"><a href="#Kalkulacka-25"><span class="linenos">25</span></a><span class="sd">        Funkce pro násobení dvou čísel.</span>
+</span><span id="Kalkulacka-26"><a href="#Kalkulacka-26"><span class="linenos">26</span></a><span class="sd">        :param a: celé číslo, první člen násobení</span>
+</span><span id="Kalkulacka-27"><a href="#Kalkulacka-27"><span class="linenos">27</span></a><span class="sd">        :param b: celé číslo, druhý člen násobení</span>
+</span><span id="Kalkulacka-28"><a href="#Kalkulacka-28"><span class="linenos">28</span></a><span class="sd">        :return: vrací součin čísel a a b</span>
+</span><span id="Kalkulacka-29"><a href="#Kalkulacka-29"><span class="linenos">29</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-30"><a href="#Kalkulacka-30"><span class="linenos">30</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="Kalkulacka-31"><a href="#Kalkulacka-31"><span class="linenos">31</span></a>
+</span><span id="Kalkulacka-32"><a href="#Kalkulacka-32"><span class="linenos">32</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka-33"><a href="#Kalkulacka-33"><span class="linenos">33</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-34"><a href="#Kalkulacka-34"><span class="linenos">34</span></a><span class="sd">        Metoda určená k dělení dvou čísel.</span>
+</span><span id="Kalkulacka-35"><a href="#Kalkulacka-35"><span class="linenos">35</span></a><span class="sd">        :param a: číslo, dělenec</span>
+</span><span id="Kalkulacka-36"><a href="#Kalkulacka-36"><span class="linenos">36</span></a><span class="sd">        :param b: číslo, dělitel</span>
+</span><span id="Kalkulacka-37"><a href="#Kalkulacka-37"><span class="linenos">37</span></a><span class="sd">        :return: podíl čísel a,b.</span>
+</span><span id="Kalkulacka-38"><a href="#Kalkulacka-38"><span class="linenos">38</span></a><span class="sd">        :raises vyhazuje výjímku v případě, že dělitel je nula.</span>
+</span><span id="Kalkulacka-39"><a href="#Kalkulacka-39"><span class="linenos">39</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka-40"><a href="#Kalkulacka-40"><span class="linenos">40</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="Kalkulacka-41"><a href="#Kalkulacka-41"><span class="linenos">41</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
+</span><span id="Kalkulacka-42"><a href="#Kalkulacka-42"><span class="linenos">42</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 </span></pre></div>
 
 
@@ -151,28 +177,29 @@ main    </h1>
     <a class="headerlink" href="#Kalkulacka.secti"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.secti-4"><a href="#Kalkulacka.secti-4"><span class="linenos"> 4</span></a>    <span class="k">def</span> <span class="nf">secti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 </span><span id="Kalkulacka.secti-5"><a href="#Kalkulacka.secti-5"><span class="linenos"> 5</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Kalkulacka.secti-6"><a href="#Kalkulacka.secti-6"><span class="linenos"> 6</span></a><span class="sd">        Metoda sečti se využívá ke sčítání dvou celých čísel.</span>
-</span><span id="Kalkulacka.secti-7"><a href="#Kalkulacka.secti-7"><span class="linenos"> 7</span></a><span class="sd">        :param a: celé číslo, první člen ke sčítání</span>
-</span><span id="Kalkulacka.secti-8"><a href="#Kalkulacka.secti-8"><span class="linenos"> 8</span></a><span class="sd">        :param b: celé číslo, druhý člen ke sčítání</span>
-</span><span id="Kalkulacka.secti-9"><a href="#Kalkulacka.secti-9"><span class="linenos"> 9</span></a><span class="sd">        :return: návratová hodnota reprezentuje součet parametrů a a b</span>
+</span><span id="Kalkulacka.secti-6"><a href="#Kalkulacka.secti-6"><span class="linenos"> 6</span></a><span class="sd">        Funkce pro sčítání dvou čísel.</span>
+</span><span id="Kalkulacka.secti-7"><a href="#Kalkulacka.secti-7"><span class="linenos"> 7</span></a><span class="sd">        :param a: celé číslo, první člen sčítání</span>
+</span><span id="Kalkulacka.secti-8"><a href="#Kalkulacka.secti-8"><span class="linenos"> 8</span></a><span class="sd">        :param b: celé číslo, druhý člen sčítání</span>
+</span><span id="Kalkulacka.secti-9"><a href="#Kalkulacka.secti-9"><span class="linenos"> 9</span></a><span class="sd">        :return: vrací součet čísel a a b</span>
 </span><span id="Kalkulacka.secti-10"><a href="#Kalkulacka.secti-10"><span class="linenos">10</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Kalkulacka.secti-11"><a href="#Kalkulacka.secti-11"><span class="linenos">11</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="Kalkulacka.secti-11"><a href="#Kalkulacka.secti-11"><span class="linenos">11</span></a>
+</span><span id="Kalkulacka.secti-12"><a href="#Kalkulacka.secti-12"><span class="linenos">12</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span></pre></div>
 
 
-            <div class="docstring"><p>Metoda sečti se využívá ke sčítání dvou celých čísel.</p>
+            <div class="docstring"><p>Funkce pro sčítání dvou čísel.</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>a</strong>:  celé číslo, první člen ke sčítání</li>
-<li><strong>b</strong>:  celé číslo, druhý člen ke sčítání</li>
+<li><strong>a</strong>:  celé číslo, první člen sčítání</li>
+<li><strong>b</strong>:  celé číslo, druhý člen sčítání</li>
 </ul>
 
 <h6 id="returns">Returns</h6>
 
 <blockquote>
-  <p>návratová hodnota reprezentuje součet parametrů a a b</p>
+  <p>vrací součet čísel a a b</p>
 </blockquote>
 </div>
 
@@ -189,12 +216,33 @@ main    </h1>
 
     </div>
     <a class="headerlink" href="#Kalkulacka.odecti"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.odecti-13"><a href="#Kalkulacka.odecti-13"><span class="linenos">13</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka.odecti-14"><a href="#Kalkulacka.odecti-14"><span class="linenos">14</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.odecti-14"><a href="#Kalkulacka.odecti-14"><span class="linenos">14</span></a>    <span class="k">def</span> <span class="nf">odecti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka.odecti-15"><a href="#Kalkulacka.odecti-15"><span class="linenos">15</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.odecti-16"><a href="#Kalkulacka.odecti-16"><span class="linenos">16</span></a><span class="sd">        Funkce pro odčítání dvou čísel.</span>
+</span><span id="Kalkulacka.odecti-17"><a href="#Kalkulacka.odecti-17"><span class="linenos">17</span></a><span class="sd">        :param a: celé číslo, první člen odčítání</span>
+</span><span id="Kalkulacka.odecti-18"><a href="#Kalkulacka.odecti-18"><span class="linenos">18</span></a><span class="sd">        :param b: celé číslo, druhý člen odčítání</span>
+</span><span id="Kalkulacka.odecti-19"><a href="#Kalkulacka.odecti-19"><span class="linenos">19</span></a><span class="sd">        :return: vrací rozdíl čísel a a b</span>
+</span><span id="Kalkulacka.odecti-20"><a href="#Kalkulacka.odecti-20"><span class="linenos">20</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.odecti-21"><a href="#Kalkulacka.odecti-21"><span class="linenos">21</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Funkce pro odčítání dvou čísel.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>a</strong>:  celé číslo, první člen odčítání</li>
+<li><strong>b</strong>:  celé číslo, druhý člen odčítání</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+
+<blockquote>
+  <p>vrací rozdíl čísel a a b</p>
+</blockquote>
+</div>
+
 
                             </div>
                             <div id="Kalkulacka.vynasob" class="classattr">
@@ -208,12 +256,33 @@ main    </h1>
 
     </div>
     <a class="headerlink" href="#Kalkulacka.vynasob"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.vynasob-16"><a href="#Kalkulacka.vynasob-16"><span class="linenos">16</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka.vynasob-17"><a href="#Kalkulacka.vynasob-17"><span class="linenos">17</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.vynasob-23"><a href="#Kalkulacka.vynasob-23"><span class="linenos">23</span></a>    <span class="k">def</span> <span class="nf">vynasob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka.vynasob-24"><a href="#Kalkulacka.vynasob-24"><span class="linenos">24</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.vynasob-25"><a href="#Kalkulacka.vynasob-25"><span class="linenos">25</span></a><span class="sd">        Funkce pro násobení dvou čísel.</span>
+</span><span id="Kalkulacka.vynasob-26"><a href="#Kalkulacka.vynasob-26"><span class="linenos">26</span></a><span class="sd">        :param a: celé číslo, první člen násobení</span>
+</span><span id="Kalkulacka.vynasob-27"><a href="#Kalkulacka.vynasob-27"><span class="linenos">27</span></a><span class="sd">        :param b: celé číslo, druhý člen násobení</span>
+</span><span id="Kalkulacka.vynasob-28"><a href="#Kalkulacka.vynasob-28"><span class="linenos">28</span></a><span class="sd">        :return: vrací součin čísel a a b</span>
+</span><span id="Kalkulacka.vynasob-29"><a href="#Kalkulacka.vynasob-29"><span class="linenos">29</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.vynasob-30"><a href="#Kalkulacka.vynasob-30"><span class="linenos">30</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Funkce pro násobení dvou čísel.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>a</strong>:  celé číslo, první člen násobení</li>
+<li><strong>b</strong>:  celé číslo, druhý člen násobení</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+
+<blockquote>
+  <p>vrací součin čísel a a b</p>
+</blockquote>
+</div>
+
 
                             </div>
                             <div id="Kalkulacka.vydel" class="classattr">
@@ -227,40 +296,35 @@ main    </h1>
 
     </div>
     <a class="headerlink" href="#Kalkulacka.vydel"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.vydel-19"><a href="#Kalkulacka.vydel-19"><span class="linenos">19</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="Kalkulacka.vydel-20"><a href="#Kalkulacka.vydel-20"><span class="linenos">20</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Kalkulacka.vydel-21"><a href="#Kalkulacka.vydel-21"><span class="linenos">21</span></a><span class="sd">        Metoda pro dělení celých čísel.</span>
-</span><span id="Kalkulacka.vydel-22"><a href="#Kalkulacka.vydel-22"><span class="linenos">22</span></a><span class="sd">        :param a: celé číslo, dělenec</span>
-</span><span id="Kalkulacka.vydel-23"><a href="#Kalkulacka.vydel-23"><span class="linenos">23</span></a><span class="sd">        :param b: celé číslo, dělitel, nesmí být nulový</span>
-</span><span id="Kalkulacka.vydel-24"><a href="#Kalkulacka.vydel-24"><span class="linenos">24</span></a><span class="sd">        :return: podíl čísel a a b</span>
-</span><span id="Kalkulacka.vydel-25"><a href="#Kalkulacka.vydel-25"><span class="linenos">25</span></a><span class="sd">        :raises: Pokud je parametr B 0, tak vyhazuje výjmu proti dělení nulou.</span>
-</span><span id="Kalkulacka.vydel-26"><a href="#Kalkulacka.vydel-26"><span class="linenos">26</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Kalkulacka.vydel-27"><a href="#Kalkulacka.vydel-27"><span class="linenos">27</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="Kalkulacka.vydel-28"><a href="#Kalkulacka.vydel-28"><span class="linenos">28</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
-</span><span id="Kalkulacka.vydel-29"><a href="#Kalkulacka.vydel-29"><span class="linenos">29</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Kalkulacka.vydel-32"><a href="#Kalkulacka.vydel-32"><span class="linenos">32</span></a>    <span class="k">def</span> <span class="nf">vydel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="Kalkulacka.vydel-33"><a href="#Kalkulacka.vydel-33"><span class="linenos">33</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.vydel-34"><a href="#Kalkulacka.vydel-34"><span class="linenos">34</span></a><span class="sd">        Metoda určená k dělení dvou čísel.</span>
+</span><span id="Kalkulacka.vydel-35"><a href="#Kalkulacka.vydel-35"><span class="linenos">35</span></a><span class="sd">        :param a: číslo, dělenec</span>
+</span><span id="Kalkulacka.vydel-36"><a href="#Kalkulacka.vydel-36"><span class="linenos">36</span></a><span class="sd">        :param b: číslo, dělitel</span>
+</span><span id="Kalkulacka.vydel-37"><a href="#Kalkulacka.vydel-37"><span class="linenos">37</span></a><span class="sd">        :return: podíl čísel a,b.</span>
+</span><span id="Kalkulacka.vydel-38"><a href="#Kalkulacka.vydel-38"><span class="linenos">38</span></a><span class="sd">        :raises vyhazuje výjímku v případě, že dělitel je nula.</span>
+</span><span id="Kalkulacka.vydel-39"><a href="#Kalkulacka.vydel-39"><span class="linenos">39</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Kalkulacka.vydel-40"><a href="#Kalkulacka.vydel-40"><span class="linenos">40</span></a>        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="Kalkulacka.vydel-41"><a href="#Kalkulacka.vydel-41"><span class="linenos">41</span></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Nelze dělit nulou&quot;</span><span class="p">)</span>
+</span><span id="Kalkulacka.vydel-42"><a href="#Kalkulacka.vydel-42"><span class="linenos">42</span></a>        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 </span></pre></div>
 
 
-            <div class="docstring"><p>Metoda pro dělení celých čísel.</p>
+            <div class="docstring"><p>Metoda určená k dělení dvou čísel.</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>a</strong>:  celé číslo, dělenec</li>
-<li><strong>b</strong>:  celé číslo, dělitel, nesmí být nulový</li>
+<li><strong>a</strong>:  číslo, dělenec</li>
+<li><strong>b</strong>:  číslo, dělitel</li>
 </ul>
 
 <h6 id="returns">Returns</h6>
 
 <blockquote>
-  <p>podíl čísel a a b</p>
+  <p>podíl čísel a,b.
+  :raises vyhazuje výjímku v případě, že dělitel je nula.</p>
 </blockquote>
-
-<h6 id="raises">Raises</h6>
-
-<ul>
-<li>Pokud je parametr B 0, tak vyhazuje výjmu proti dělení nulou.</li>
-</ul>
 </div>
 
 
