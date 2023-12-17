@@ -39,3 +39,6 @@ class Kalkulacka:
         if b == 0:
             raise Exception("Nelze dělit nulou")
         return a / b
+    
+    def modulo(self, a, b):
+        return a % b
