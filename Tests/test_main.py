@@ -1,12 +1,13 @@
 from unittest import TestCase
-from main import Kalkulacka
+from Kalkulacka.kalkulacka import Kalkulacka
 
 
 class TestKalkulacka(TestCase):
 
     def test_secti(self):
         k = Kalkulacka()
-        self.assertEqual(10, k.secti(4, 6), "scitani")
+        self.assertEqual(10, k.secti(4, 6))
+
 
     def test_odecti(self):
         k = Kalkulacka()
